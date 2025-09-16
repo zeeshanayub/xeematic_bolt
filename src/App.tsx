@@ -99,9 +99,9 @@ function App() {
               <a href="#faq" className="text-gray-300 hover:text-blue-500 transition-colors">FAQ</a>
               <a href="#contact" className="text-gray-300 hover:text-blue-500 transition-colors">Contact</a>
             </div>
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            <a href="#services" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
               Get Started
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -121,10 +121,10 @@ function App() {
                 Eliminate repetitive tasks, boost productivity by 300%, and scale your operations with cutting-edge AI automation solutions tailored for your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+                <a href="#transform" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
                   Automate Your Business
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
+                </a>
                 <button className="border border-gray-600 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
                   Watch Demo
                 </button>
@@ -495,17 +495,21 @@ function App() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/50 to-purple-900/50">
+      <section id="transform" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900/50 to-purple-900/50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
             Don't let your competitors get ahead while you're stuck with manual processes. Join the AI automation revolution today and unlock your business's true potential. Schedule a free consultation and discover how we can save you thousands of hours and dramatically increase your productivity.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+            <a 
+              href="https://calendly.com/xeematic/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
               Schedule Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
+            </a>
             <button className="border border-gray-600 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
               Download Case Study
             </button>
