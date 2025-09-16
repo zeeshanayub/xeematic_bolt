@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { 
   ChevronDown, 
-  ChevronRight, 
-  BarChart3, 
-  Workflow, 
-  Target,
+  ChevronRight,
   CheckCircle,
   Star,
   Phone,
@@ -14,7 +11,11 @@ import {
   Zap,
   Clock,
   TrendingUp,
-  Users
+  Users,
+  MessageSquare,
+  Workflow,
+  LineChart,
+  Mic
 } from 'lucide-react';
 
 interface FAQItem {
@@ -247,41 +248,47 @@ function App() {
       <section id="services" className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6">Our Core Automation Services</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6">AI Automation Solutions</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Comprehensive AI solutions designed to transform every aspect of your business operations.
+              Transform your business with our cutting-edge AI automation services.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
-              <div className="h-12 w-12 mb-4 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">AI</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="group bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="h-12 w-12 mb-4 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <MessageSquare className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Automated Customer Support</h3>
-              <p className="text-gray-300 mb-4">AI-powered chatbots that handle 80% of customer inquiries instantly, improving satisfaction and reducing costs.</p>
-              <div className="text-sm text-blue-400 font-medium">24/7 availability • Multi-language support</div>
+              <h3 className="text-xl font-semibold mb-3">AI Chatbots</h3>
+              <p className="text-gray-300 mb-4">We create conversational AI agents for customer support, lead generation, and user engagement.</p>
+              <div className="text-sm text-blue-400 font-medium">24/7 Support • Lead Generation • Smart Responses</div>
             </div>
 
-            <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
-              <BarChart3 className="h-12 w-12 text-purple-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Data Analysis & Reporting</h3>
-              <p className="text-gray-300 mb-4">Transform raw data into actionable insights with automated reporting and predictive analytics.</p>
-              <div className="text-sm text-purple-400 font-medium">Real-time dashboards • Predictive modeling</div>
+            <div className="group bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="h-12 w-12 mb-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Workflow className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Workflow Automation</h3>
+              <p className="text-gray-300 mb-4">We build custom AI solutions to automate repetitive tasks, improving efficiency and accuracy.</p>
+              <div className="text-sm text-purple-400 font-medium">Process Automation • Task Management • Custom Workflows</div>
             </div>
 
-            <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 transform hover:scale-105">
-              <Workflow className="h-12 w-12 text-green-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Workflow Optimization</h3>
-              <p className="text-gray-300 mb-4">Streamline business processes with intelligent automation that adapts to your unique workflow requirements.</p>
-              <div className="text-sm text-green-400 font-medium">Custom workflows • Integration ready</div>
+            <div className="group bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="h-12 w-12 mb-4 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <LineChart className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Data Analytics & Insights</h3>
+              <p className="text-gray-300 mb-4">We use AI to analyze your business data and provide actionable insights to inform your strategy.</p>
+              <div className="text-sm text-green-400 font-medium">Predictive Analytics • Business Intelligence • Data Visualization</div>
             </div>
 
-            <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-yellow-500/50 transition-all duration-300 transform hover:scale-105">
-              <Target className="h-12 w-12 text-yellow-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Personalized Marketing</h3>
-              <p className="text-gray-300 mb-4">AI-driven marketing campaigns that deliver personalized content to the right audience at optimal times.</p>
-              <div className="text-sm text-yellow-400 font-medium">Behavioral targeting • A/B testing</div>
+            <div className="group bg-gray-800/50 border border-gray-700 rounded-xl p-6 hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-2">
+              <div className="h-12 w-12 mb-4 bg-gradient-to-br from-yellow-600 to-orange-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Mic className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">AI Voice Automation</h3>
+              <p className="text-gray-300 mb-4">We develop AI-powered voice bots for customer support, call routing, and more, providing instant, 24/7 assistance.</p>
+              <div className="text-sm text-yellow-400 font-medium">Voice Recognition • Call Routing • Automated Response</div>
             </div>
           </div>
         </div>
